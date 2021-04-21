@@ -24,3 +24,19 @@ print(opponent) #Alicia
 opponent.attack(mike)
 
 print(mike)
+
+#Incorporating Inheritance
+
+class Boxer(New_Fighter):
+	def heal(self):
+		self.health += 10
+
+
+boxer_mike = Boxer("Boxer Mike")
+print(boxer_mike)
+print(boxer_mike.damage)
+print(boxer_mike.health)
+
+boxer_mike.heal()
+
+print(boxer_mike)
